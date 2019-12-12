@@ -16,19 +16,19 @@ public class Principal {
 				Ejercicios.Ejer1();
 				break;
 			case 2:
-
+				Ejercicios.ejer2();
 				break;
 			case 3:
-
+				Ejercicios.ejer3();
 				break;
 			case 4:
-
+				Ejercicios.ejer4();
 				break;
 			case 5:
-
+				Ejercicios.ejer5();
 				break;
 			case 6:
-
+				Ejercicios.ejer6();
 				break;
 			case 7:
 				System.out.println("Has salido de la aplicación");
