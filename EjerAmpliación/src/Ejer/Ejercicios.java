@@ -43,7 +43,7 @@ public class Ejercicios {
 
 		if (suma == num) {
 			System.out.println("El número " + num + " es perfecto");
-			return bandera=true;
+			return bandera = true;
 
 		} else {
 			System.out.println("El número: " + num + " no es perfecto");
@@ -83,12 +83,12 @@ public class Ejercicios {
 
 	}
 
-	public static void ejer3() {
+	public static String ejer3(int fecha) {
 		/**
 		 * introduces una fecha y la imprime en el formato indicado
 		 */
 		Scanner leer = new Scanner(System.in);
-		int fecha = 0;
+		
 		boolean bandera = true;
 		String fechaString = "";
 
@@ -111,8 +111,7 @@ public class Ejercicios {
 			}
 		} while (!bandera);
 
-		System.out.println("La fecha introducida es: " + fechaString.substring(6, 8) + "/" + fechaString.substring(4, 6)
-				+ "/" + fechaString.substring(0, 4));
+		return (fechaString.substring(6, 8) + "/" + fechaString.substring(4, 6)	+ "/" + fechaString.substring(0, 4));
 	}
 
 	public static void ejer4() {

@@ -49,7 +49,7 @@ class testAmpliacion {
 	
 	@Test
 	void testEjercicio3_1() {
-		
+		assertEquals("14/12/2019", Ejercicios.ejer3(20191214));
 	}
 	
 }

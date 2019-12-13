@@ -19,7 +19,7 @@ public class Principal {
 				Ejercicios.ejer2(1997);
 				break;
 			case 3:
-				Ejercicios.ejer3();
+				Ejercicios.ejer3(20191214);
 				break;
 			case 4:
 				Ejercicios.ejer4();
