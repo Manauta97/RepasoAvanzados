@@ -12,28 +12,28 @@ import java.util.Scanner;
  */
 public class Ejercicios {
 
-	public static void Ejer1() {
+	public static boolean Ejer1(int num) {
 		/**
 		 * Escribe un número y te dice si es perfecto o no
 		 */
 		Scanner leer = new Scanner(System.in);
-		int num = 0, suma = 0;
+		int suma = 0;
 		boolean bandera = true;
-		do {
-			try {
-				leer = new Scanner(System.in);
-				bandera = true;
-				System.out.println("Escriba un número entero positivo: ");
-				num = leer.nextInt();
-			} catch (InputMismatchException e) {
-				bandera = false;
-				System.out.println("datos introducidos no correctos");
-			} catch (Exception e) {
-				System.out.println("datos mal introducidos");
-				bandera = false;
-			}
-
-		} while (!bandera);
+//		do {
+//			try {
+//				leer = new Scanner(System.in);
+//				bandera = true;
+//				System.out.println("Escriba un número entero positivo: ");
+//				num = leer.nextInt();
+//			} catch (InputMismatchException e) {
+//				bandera = false;
+//				System.out.println("datos introducidos no correctos");
+//			} catch (Exception e) {
+//				System.out.println("datos mal introducidos");
+//				bandera = false;
+//			}
+//
+//		} while (!bandera);
 
 		for (int i = 1; i < num; i++) {
 			if (num % i == 0) {
@@ -43,8 +43,12 @@ public class Ejercicios {
 
 		if (suma == num) {
 			System.out.println("El número " + num + " es perfecto");
+			return bandera=true;
+
 		} else {
 			System.out.println("El número: " + num + " no es perfecto");
+			return bandera = false;
+
 		}
 
 	}
@@ -188,7 +192,7 @@ public class Ejercicios {
 		Scanner leer = new Scanner(System.in);
 		int num = 0;
 		boolean bandera = true;
-		String numeroString="";
+		String numeroString = "";
 
 		do {
 			try {
@@ -204,9 +208,9 @@ public class Ejercicios {
 				System.out.println("error desconocido");
 			}
 		} while (!bandera);
-		
+
 		for (int i = 0; i < numeroString.length(); i++) {
-			
+
 		}
 	}
 
