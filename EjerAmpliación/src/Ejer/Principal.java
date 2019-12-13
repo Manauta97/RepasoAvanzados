@@ -13,10 +13,10 @@ public class Principal {
 			
 			switch (opc) {
 			case 1:
-				Ejercicios.Ejer1(496);
+				Ejercicios.Ejer1(32);
 				break;
 			case 2:
-				Ejercicios.ejer2();
+				Ejercicios.ejer2(1997);
 				break;
 			case 3:
 				Ejercicios.ejer3();

@@ -53,31 +53,32 @@ public class Ejercicios {
 
 	}
 
-	public static void ejer2() {
+	public static boolean ejer2(int anyo) {
 		/**
 		 * Comprueba que el año introducido es bisiesto
 		 */
 		Scanner leer = new Scanner(System.in);
-		int anyo = 0;
 		boolean dato = true;
-		do {
-			try {
-				System.out.println("Dime el año que quieres comprobar si es bisiesto");
-				anyo = leer.nextInt();
-				dato = true;
-			} catch (InputMismatchException e) {
-				dato = false;
-				System.out.println("datos mal introducidos");
-			} catch (Exception e) {
-				dato = false;
-				System.out.println("error desconocido");
-			}
-		} while (!dato);
+//		do {
+//			try {
+//				System.out.println("Dime el año que quieres comprobar si es bisiesto");
+//				anyo = leer.nextInt();
+//				dato = true;
+//			} catch (InputMismatchException e) {
+//				dato = false;
+//				System.out.println("datos mal introducidos");
+//			} catch (Exception e) {
+//				dato = false;
+//				System.out.println("error desconocido");
+//			}
+//		} while (!dato);
 
 		if ((anyo % 4 == 0) && (anyo % 100 != 0) && (anyo % 400 != 0)) {
 			System.out.println("El año " + anyo + " es bisiesto");
+			return dato = true;
 		} else {
 			System.out.println("El año " + anyo + " no es bisiesto");
+			return dato = false;
 		}
 
 	}
